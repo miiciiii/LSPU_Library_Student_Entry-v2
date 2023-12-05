@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student Library Entry Monitoring Site for Laguna State Polytechnic University (LSPU-SCC)"
+    />
+    <meta
+      name="keywords"
+      content="LSPU-SCC, library, student, entry monitoring, study spaces, technology"
+    />
+    <title>LSPU-SCC Student Library Entry Monitoring Site</title>
+    <script src="{% static 'Scripts/entryqrcode.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'entryqrcode.css' %}" />
+    <link rel="icon" type="image/png" href="{% static 'Images/logo.png' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="user-profile-header">
+        <a class="header-button" href="/">&lt; Back to Home</a>
+      </header>
+
+      <div class="user-entry-container">
+        <div class="user-entry-content">
+
+          <!-- Show QR Code -->
+          <div class="qr-code-entry">
+            <h2 class="qr-code--subheading">Too lazy to type manually?</h2>
+            <h1 class="qr-code--heading">Show your QR Code!</h1>
+            <a href="{% url 'scan_entry_qrcode' %}" class="qr-code--btn"
+              >Show QR Code</a
+            >
+          </div>
+
+          <!-- Manual Entry Login -->
+          <div class="manual-entry">
+            <div class="manual-entry-content">
+              <div class="header-logo-heading">
+                <div class="header-logo-container">
+                  <a href="#">
+                    <img
+                      class="header-logo"
+                      alt="LSPU-SCC Logo"
+                      src="{% static 'Images/logo.png' %}"
+                    />
+                  </a>
+                </div>
+                <h1 class="manual-entry-heading">Login</h1>
+              </div>
+              <form action="{% url 'register_entry' %}" method="POST" manual-entry-form>
+                {% csrf_token %}
+                <!-- Full Name Input -->
+                <input
+                  type="text"
+                  class="manual-entry-attributes"
+                  id="full-name"
+                  name="student-name"
+                  placeholder="Enter Full Name (First Name, M.I, Surname)"
+                  required
+                  oninput="capitalizeName(this)"
+                />
+
+                <!-- Student ID Input -->
+                <input
+                  type="text"
+                  class="manual-entry-attributes"
+                  id="student-id"
+                  name="student-id"
+                  placeholder="Enter Student ID"
+                  required
+                  oninput="validateStudentID(this)"
+                />
+
+                <!-- College Department Dropdown -->
+                <select
+                  class="manual-entry-attributes"
+                  id="college-department"
+                  name="student-department"
+                  required
+                  disabled
+                  onchange="updateCourses(); enableFormButton(this);"
+                >
+                  <option value="" selected>Select College Department</option>
+                  <option value="N/A">Not Applicable</option>
+                  <option value="CAS">
+                    College of Arts and Sciences (CAS)
+                  </option>
+                  <option value="CBAA">
+                    College of Business Administration and Accountancy (CBAA)
+                  </option>
+                  <option value="CCS">College of Computer Studies (CCS)</option>
+                  <option value="CCJE">
+                    College of Criminal Justice Education (CCJE)
+                  </option>
+                  <option value="COE">College of Engineering (COE)</option>
+                  <option value="CHMT">
+                    College of Hospitality Management and Tourism (CHMT)
+                  </option>
+                  <option value="CIT">
+                    College of Industrial Technology (CIT)
+                  </option>
+                  <option value="COL">College of Law (COL)</option>
+                  <option value="CONAH">
+                    College of Nursing and Allied Health (CONAH)
+                  </option>
+                  <option value="CTE">
+                    College of Teacher Education (CTE)
+                  </option>
+                  <option value="SHS">Senior High School (SHS)</option>
+                </select>
+
+                <!-- Course or College Programs Dropdown -->
+                <select
+                  class="manual-entry-attributes"
+                  id="course"
+                  name="student-course"
+                  required
+                  disabled
+                >
+                  <option value="" selected>Select Course</option>
+                </select>
+
+                <!-- School Year Dropdown -->
+                <select
+                  class="manual-entry-attributes"
+                  id="year"
+                  name="year"
+                  required
+                  disabled
+                >
+                  <option value="" selected>Select Year</option>
+                  <option value="1st">1st Year</option>
+                  <option value="2nd">2nd Year</option>
+                  <option value="3rd">3rd Year</option>
+                  <option value="4th">4th Year</option>
+                  <option value="Others">Others</option>
+                </select>
+
+                <select
+                  class="manual-entry-attributes"
+                  id="purpose"
+                  name="purpose"
+                  required
+                  disabled
+                >
+                  <option value="" selected>Select Visit Purpose</option>
+                  <option value="thesis">Thesis Section</option>
+                  <option value="book">Book Section</option>
+                  <option value="periodicals">Periodicals Section</option>
+                  <option value="reading">Reading Area</option>
+                  <option value="internet">Internet and Computer Area</option>
+                </select>
+                <input
+                  type="submit"
+                  value="Confirm"
+                  class="manual-entry-confirm"
+                  id="confirm-button"
+                  disabled
+                />
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+
+    </div>
+  </body>
+</html>

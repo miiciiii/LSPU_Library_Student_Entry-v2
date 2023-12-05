@@ -1,0 +1,41 @@
+.ConfirmSContainer{
+  max-width: 150rem;
+      width: 90%;
+}
+
+.ConfirmS-header{
+display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirmseats{
+  height: fit-content;
+}
+
+.confirm-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 43%;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-color: #4C5B7B;
+  color: #ecebeb;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  margin-top: -15px;
+}
+
+.confirm-button:hover,
+.confirm-button:active {
+  background-color: #7485AA;
+  box-shadow: 0 5px 20px 5px rgba(129, 144, 177, 0.5);
+}

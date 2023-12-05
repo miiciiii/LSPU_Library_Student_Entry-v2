@@ -1,0 +1,61 @@
+{% load base64_encoding %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student Library Entry Monitoring Site for Laguna State Polytechnic University (LSPU-SCC)"
+    />
+    <meta
+      name="keywords"
+      content="LSPU-SCC, library, student, entry monitoring, study spaces, technology"
+    />
+    <title>LSPU-SCC Student Library Entry Monitoring Site</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="{% static 'showqrcode.css' %}" />
+    <link rel="icon" type="image/png" href="{% static 'Images/logo.png' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="qr-code-header">
+        <a class="header-button" href="/">&lt; Back to Home</a>
+        <div class="header-logo-container">
+          <a href="#">
+            <img
+              class="header-logo"
+              alt="LSPU-SCC Logo"
+              src="{% static 'Images/logo.png' %}"
+            />
+          </a>
+        </div>
+      </header>
+
+      <div class="generated-qr-container">
+        <div class="generated-qr-content">
+          <h1 class="generated-qr-heading">
+            Please take a picture of your QR Code. 
+            <p>{{ student }}</p>
+          </h1>
+          <div class="generated-qr">
+
+            <img src="data:image/png;base64,{{ qrcode|base64_encode }}" alt="QR Code">
+
+          </div>
+          <a href="/" class="generated-qr--btn">Done</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

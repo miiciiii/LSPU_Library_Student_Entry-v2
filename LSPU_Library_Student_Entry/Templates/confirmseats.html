@@ -1,0 +1,501 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Student Library Entry Monitoring Site for Laguna State Polytechnic University (LSPU-SCC)" />
+    <meta name="keywords" content="LSPU-SCC, library, student, entry monitoring, study spaces, technology" />
+    <title>LSPU-SCC Student Library Entry Monitoring Site</title>
+    <script src="{% static 'Scripts/homepage.js' %}"></script>
+    <script src="{% static 'Scripts/confirmseats.js' %}"></script>
+    
+
+    <link rel="stylesheet" href="{% static 'showqrcode.css' %}" />
+    <link rel="stylesheet" href="{% static 'homepage.css' %}" />
+    <link rel="stylesheet" href="{% static 'confirmseats.css' %}" />
+    <link rel="stylesheet" href="{% static 'stylemap.css' %}" />
+    <link rel="icon" type="image/png" href="{% static 'Images/logo.png' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+</head>
+
+<body>
+    <div class="ConfirmScontainer">
+        <header class="ConfirmS-header">
+            <a class="header-button" href="/">&lt; Back to Home</a>
+            <div class="header-logo-container">
+                <a href="#">
+                    <img class="header-logo" alt="LSPU-SCC Logo" src="{% static 'Images/logo.png' %}" />
+                </a>
+            </div>
+        </header>
+
+        <div class="library-map-container confirmseats">
+            <h2 class="map-heading">Available Seats</h2>
+            <div class="library-map">
+                <div class="first-floor-buttons">
+                    <div class="visual-guide-overlay"></div>
+        
+                    <div class="SecLabel">
+                        <div class="SecLText">1st Floor</div>
+                    </div>
+        
+                    <!--DISPLAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+                    <div class="DISPLAYF1">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF2">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF3">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF4">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF5">
+                        <div class="L2textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF6">
+                        <div class="L2textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF7">
+                        <div class="L2textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF8">
+                        <div class="L2textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF9">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF10">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="DISPLAYF11">
+                        <div class="L1textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="MIDINFODESK">
+                        <div class="L2textStyles"> INFORMATION DESK</div>
+                    </div>
+        
+                    <div class="RightInfoDesk">
+                        <div class="L1textStyles"> DIGITAL INFODESK</div>
+                    </div>
+        
+                    <div class="stairs">
+                        <div class="group">
+                            <div class="overlap-group">
+                                <div class="common-rectangle rectangle"></div>
+                                <div class="common-rectangle div"></div>
+                                <div class="common-rectangle rectangle-2"></div>
+                                <div class="common-rectangle rectangle-3"></div>
+                                <div class="common-rectangle rectangle-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF DISPLAY DESIGN FOR FIRST FLOORRRRRRRRRRRRRRRR-->
+        
+        
+                    <!--BUTTONS FOR FIRST FLOOR STARTS HEREEEEEEEEEEEEEEEEEEEEE-->
+                    <!--BUTTONS FOR FIRST FLOOR LEFT SIDEEEEE STARTS HEREEEEEEEEEEEEEEEEEEEEE-->
+        
+                    <button id="button1" onclick="toggleButtonState('button1')" class="FL4T1 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button2" onclick="toggleButtonState('button2')" class="FL4T2 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button3" onclick="toggleButtonState('button3')" class="FL4T3 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button4" onclick="toggleButtonState('button4')" class="FL4T4 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button5" onclick="toggleButtonState('button5')" class="FL4T5 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button6" onclick="toggleButtonState('button6')" class="FL4T6 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button7" onclick="toggleButtonState('button7')" class="FL4T7 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button8" onclick="toggleButtonState('button8')" class="FL4T8 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button9" onclick="toggleButtonState('button9')" class="FL4T9 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button10" onclick="toggleButtonState('button10')" class="FL4T10 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+        
+                    <!--BUTTONS FOR FIRST FLOOR MID(SINGLE SEATS) PART STARTS HEREEEEEEEEEEEEEEEEEEEEE-->
+        
+                    <button id="button11" onclick="toggleButtonState('button11')" class="FS1 animated-button">
+                        <div class="STtext"> FS1</div>
+                      </button>
+                    
+                      <button id="button12" onclick="toggleButtonState('button12')" class="FS2 animated-button">
+                        <div class="STtext"> FS2</div>
+                      </button>
+                    
+                      <button id="button13" onclick="toggleButtonState('button13')" class="FS3 animated-button">
+                        <div class="STtext"> FS3</div>
+                      </button>
+                    
+                      <button id="button14" onclick="toggleButtonState('button14')" class="FS4 animated-button">
+                        <div class="STtext"> FS4</div>
+                      </button>
+                    
+                      <button id="button15" onclick="toggleButtonState('button15')" class="FS5 animated-button">
+                        <div class="STtext"> FS5</div>
+                      </button>
+                    
+                      <button id="button16" onclick="toggleButtonState('button16')" class="FS6 animated-button">
+                        <div class="STtext"> FS6</div>
+                      </button>
+                    
+                      <button id="button17" onclick="toggleButtonState('button17')" class="FS7 animated-button">
+                        <div class="STtext"> FS7</div>
+                      </button>
+                    
+                      <button id="button18" onclick="toggleButtonState('button18')" class="FS8 animated-button">
+                        <div class="STtext"> FS8</div>
+                      </button>
+                    
+                      <button id="button19" onclick="toggleButtonState('button19')" class="FS9 animated-button">
+                        <div class="STtext"> FS9</div>
+                      </button>
+        
+                    <!--BUTTONS FOR FIRST FLOOR RIGHT SIDE PART STARTS HEREEEEEEEEEEEEEEEEEEEEE-->
+                    <button id="button20" onclick="toggleButtonState('button20')" class="FR4T1 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button21" onclick="toggleButtonState('button21')" class="FR5T2 animated-button">
+                        <div class="Ftext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button22" onclick="toggleButtonState('button22')" class="FR8T3 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button23" onclick="toggleButtonState('button23')" class="FR8T4 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button24" onclick="toggleButtonState('button24')" class="FR8T5 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button25" onclick="toggleButtonState('button25')" class="FR8T6 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button26" onclick="toggleButtonState('button26')" class="FR4T7 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button27" onclick="toggleButtonState('button27')" class="FR4T8 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button28" onclick="toggleButtonState('button28')" class="FR4T9 animated-button">
+                        <div class="Ttext"> 4 SEATER</div>
+                      </button>
+                    
+                      <button id="button29" onclick="toggleButtonState('button29')" class="PC2 animated-button">
+                        <div class="Ftext"> PC-02</div>
+                      </button>
+                    
+                      <button id="button30" onclick="toggleButtonState('button30')" class="PC3 animated-button">
+                        <div class="Ftext"> PC-03</div>
+                      </button>
+        
+                </div>
+        
+                <button class="GOTO2NDFLOOR animated-button" onclick="toggleLibraryContainer('second')">
+                    <div class="GT1FTS">&lt; GO TO SECOND FLOOR </div>
+                </button>
+                <!--END OF BUTTONS FOR FIRST FLOOR-->
+        
+        
+                <!--BUTTONS FOR SECOND FLOOR-->
+                <div class="second-floor-buttons">
+                    <!--TO BE REMOVED-->
+                    <div class="visual-guide-overlay"></div>
+                    <!--TO BE REMOVED-->
+                    <div class="SecLabel">
+                        <div class="SecLText">2nd Floor</div>
+                    </div>
+        
+                    <!--DISPLAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+                    <div class="BookSectionL1">
+                        <div class="L1textStyles"> BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL2">
+                        <div class="L2textStyles"> BOOK SECTION</div>
+                    </div>
+        
+                    <div class="ThesisSectionL3">
+                        <div class="L3textStyles"> THESIS SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL4">
+                        <div class="L1textStyles"> BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL5">
+                        <div class="L2textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL6">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL7">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL8">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL9">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL10">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL11">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookSectionL12">
+                        <div class="L1textStyles">BOOK SECTION</div>
+                    </div>
+        
+                    <div class="BookReturn">
+                        <div class="BReturn"> BOOK RETURN</div>
+                    </div>
+        
+                    <div class="box">
+                        <div class="group">
+                            <div class="overlap-group">
+                                <div class="common-rectangle rectangle"></div>
+                                <div class="common-rectangle div"></div>
+                                <div class="common-rectangle rectangle-2"></div>
+                                <div class="common-rectangle rectangle-3"></div>
+                                <div class="common-rectangle rectangle-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF DISPLAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+        
+        
+                    <!--2nd floor BUTTONSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+        
+                    <!--Single Seats Buttons-->
+                    <button id="button31" onclick="toggleButtonState('button31')" class="SS1 animated-button">
+                        <div class="STtext">SS1</div>
+                      </button>
+                    
+                      <button id="button32" onclick="toggleButtonState('button32')" class="SS2 animated-button">
+                        <div class="STtext">SS2</div>
+                      </button>
+                    
+                      <button id="button33" onclick="toggleButtonState('button33')" class="SS3 animated-button">
+                        <div class="STtext">SS3</div>
+                      </button>
+                    
+                      <button id="button34" onclick="toggleButtonState('button34')" class="SS4 animated-button">
+                        <div class="STtext">SS4</div>
+                      </button>
+                    
+                      <button id="button35" onclick="toggleButtonState('button35')" class="SS5 animated-button">
+                        <div class="STtext">SS5</div>
+                      </button>
+                    
+                      <button id="button36" onclick="toggleButtonState('button36')" class="SS6 animated-button">
+                        <div class="STtext">SS6</div>
+                      </button>
+                    
+                      <button id="button37" onclick="toggleButtonState('button37')" class="SS7 animated-button">
+                        <div class="STtext">SS7</div>
+                      </button>
+                    
+                      <button id="button38" onclick="toggleButtonState('button38')" class="SS8 animated-button">
+                        <div class="STtext">SS8</div>
+                      </button>
+                    
+                      <button id="button39" onclick="toggleButtonState('button39')" class="SS9 animated-button">
+                        <div class="STtext">SS9</div>
+                      </button>
+                    
+                      <button id="button40" onclick="toggleButtonState('button40')" class="SS10 animated-button">
+                        <div class="STtext">SS10</div>
+                      </button>
+                    
+                      <button id="button41" onclick="toggleButtonState('button41')" class="SS11 animated-button">
+                        <div class="STtext">SS11</div>
+                      </button>
+                    
+                      <button id="button42" onclick="toggleButtonState('button42')" class="SS12 animated-button">
+                        <div class="STtext">SS12</div>
+                      </button>
+                    
+                      <button id="button43" onclick="toggleButtonState('button43')" class="SS13 animated-button">
+                        <div class="STtext">SS13</div>
+                      </button>
+                    
+                      <button id="button44" onclick="toggleButtonState('button44')" class="SS14 animated-button">
+                        <div class="STtext">SS14</div>
+                      </button>
+                    
+                      <button id="button45" onclick="toggleButtonState('button45')" class="SS15 animated-button">
+                        <div class="STtext">SS15</div>
+                      </button>
+                    
+                      <button id="button46" onclick="toggleButtonState('button46')" class="SS16 animated-button">
+                        <div class="STtext">SS16</div>
+                      </button>
+                    
+                      <button id="button47" onclick="toggleButtonState('button47')" class="SS17 animated-button">
+                        <div class="STtext">SS17</div>
+                      </button>
+                    
+                      <button id="button48" onclick="toggleButtonState('button48')" class="SS18 animated-button">
+                        <div class="STtext">SS18</div>
+                      </button>
+                    
+                      <button id="button49" onclick="toggleButtonState('button49')" class="SS19 animated-button">
+                        <div class="STtext">SS19</div>
+                      </button>
+                    <!--End of Single Seats Buttons-->
+        
+        
+                    <button id="button50" onclick="toggleButtonState('button50')" class="ST1 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button51" onclick="toggleButtonState('button51')" class="ST2 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button52" onclick="toggleButtonState('button52')" class="ST3 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button53" onclick="toggleButtonState('button53')" class="ST4 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button54" onclick="toggleButtonState('button54')" class="ST5 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button55" onclick="toggleButtonState('button55')" class="ST6 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button56" onclick="toggleButtonState('button56')" class="ST7 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button57" onclick="toggleButtonState('button57')" class="ST8 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button58" onclick="toggleButtonState('button58')" class="ST9 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button59" onclick="toggleButtonState('button59')" class="ST10 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+                    
+                      <button id="button60" onclick="toggleButtonState('button60')" class="ST11 animated-button">
+                        <div class="Ttext">4 SEATER</div>
+                      </button>
+        
+        
+                    <!--END OF 2ND FLOOR BUTTON LEFT SIDE-->
+        
+        
+                </div>
+        
+                <button class="GOTO1STFLOOR animated-button" onclick="toggleLibraryContainer('first')">
+                    <div class="GT1FTS">&lt; GO TO FIRST FLOOR </div>
+                </button>
+            </div>
+
+            <button class="confirm-button" onclick="redirectToHome()">Confirm</button>
+
+          </div>
+            
+        </div>
+        
+        
+    </div>
+
+    <script>
+        // Function to toggle button state
+        function toggleButtonState(buttonId) {
+            const currentState = Cookies.get(buttonId) === 'true';
+            Cookies.set(buttonId, String(!currentState));
+            updateButtonAppearance(buttonId);
+        }
+  
+        // Function to update button appearance
+        function updateButtonAppearance(buttonId) {
+            const button = document.getElementById(buttonId);
+            if (Cookies.get(buttonId) === 'true') {
+                button.classList.add('lit');
+            } else {
+                button.classList.remove('lit');
+            }
+        }
+  
+        // Initialize button appearance on page load
+        for (let i = 1; i <= 60; i++) {
+            updateButtonAppearance(`button${i}`);
+        }
+    </script>
+
+</body>
+
+</html>

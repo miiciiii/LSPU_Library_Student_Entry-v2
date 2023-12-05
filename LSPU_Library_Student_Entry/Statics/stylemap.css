@@ -1,0 +1,1345 @@
+.shared-container {
+    display: flex;
+}
+
+.section {
+    display: none;
+}
+
+.library-map-container.section,
+.about-us-container.section,
+.contact-us-container.section,
+.log-in-container.section,
+.create-qr-code-container.section {
+    display: block;
+}
+
+.visual-guide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+    /* Make the overlay not block mouse events */
+}
+
+
+
+/*START OF FIRST FLOOR DESIGNSSSSSSSSSSSSSSSSSSSSSSSS*/
+.first-floor-buttons{
+    position: relative;
+        width: 930px;
+        height: 393px;
+        background-color: #d9d9d9;
+        border-radius: 6px;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.DISPLAYF1{
+        position: absolute;
+        width: 22px;
+        height: 171px;
+        top: 124px;
+        left: 23px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.DISPLAYF2{
+         position: absolute;
+        width: 10px;
+        height: 75px;
+        top: 50px;
+        left: 90px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.DISPLAYF3 {
+    position: absolute;
+    width: 10px;
+    height: 75px;
+    top: 50px;
+    left: 124px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF4 {
+    position: absolute;
+    width: 10px;
+    height: 75px;
+    top: 50px;
+    left: 158px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF5 {
+    position: absolute;
+    width: 95px;
+    height:12px;
+    top: 199px;
+    left: 63px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF6 {
+    position: absolute;
+    width: 95px;
+    height:12px;
+    top: 199px;
+    left: 191px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF7 {
+    position: absolute;
+    width: 70px;
+    height: 22px;
+    top: 301px;
+    left: 63px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF8 {
+    position: absolute;
+    width: 70px;
+    height: 22px;
+    top: 347px;
+    left: 63px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF9 {
+    position: absolute;
+    width: 22px;
+    height: 70px;
+    top: 301px;
+    left: 152px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF10 {
+    position: absolute;
+    width: 22px;
+    height: 70px;
+    top: 301px;
+    left: 207px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.DISPLAYF11 {
+    position: absolute;
+    width: 22px;
+    height: 70px;
+    top: 301px;
+    left: 262px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.MIDINFODESK{
+    position: absolute;
+    width: 275px;
+    height: 193px;
+    top: 54px;
+    left: 340px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.MIDINFODESK .L2textStyles{
+    font-size: 16px;
+}
+.RightInfoDesk{
+    position: absolute;
+    width: 51px;
+    height: 251px;
+    top: 54px;
+    right: 27px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+    
+}
+.RightInfoDesk .L1textStyles{
+    font-size: 16px;
+}
+/*Stairs*/
+/* Styling for the stairs */
+.stairs {
+    width: 68px;
+    height: 51px;
+}
+
+/* Styling for the nested group */
+.stairs .group {
+    position: absolute;
+    width: 51px;
+    height: 68px;
+    top: 305px;
+    right: 28px;
+}
+
+/* Styling for the inner overlapping group */
+.stairs .overlap-group {
+    position: absolute;
+    height: 68px;
+}
+
+/* Styling for common rectangles within the overlap group */
+.stairs .common-rectangle {
+    position: absolute;
+    width: 68px;
+    height: 11px;
+    top: 28px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+    transform: rotate(-90deg);
+}
+
+/* Individual styling for each rectangle */
+.stairs .rectangle {
+    left: -28px;
+}
+
+.stairs .div {
+    left: -8px;
+}
+
+.stairs .rectangle-2 {
+    left: -18px;
+}
+
+.stairs .rectangle-3 {
+    left: 12px;
+}
+
+.stairs .rectangle-4 {
+    left: 2px;
+}
+
+/*END OF STAIRS*/
+/*END OF DESIGNS FOR FIRST FLOORRRRRRRRRRRRRRRRR*/
+
+
+
+/*START OF FIRST FLOOR BUTTONS STARTS HEREEEEEEEEEE*/
+.Ftext{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.FL4T1{
+        position: absolute;
+        width: 46px;
+        height: 25px;
+        top: 105px;
+        left: 195px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.FL4T2 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 105px;
+    left: 261px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T3 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 157px;
+    left: 63px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T4 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 157px;
+    left: 129px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T5 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 157px;
+    left: 195px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T6 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 157px;
+    left: 261px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T7 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 231px;
+    left: 79px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T8 {
+    position: absolute;
+width: 25px;
+    height: 46px;
+    top: 231px;
+    left: 140px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T9 {
+    position: absolute;
+width: 25px;
+    height: 46px;
+    top: 231px;
+    left: 201px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FL4T10 {
+    position: absolute;
+width: 25px;
+    height: 46px;
+    top: 231px;
+    left: 261px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+
+
+.FL4T11 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 104px;
+    left: 10PX;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+/*MID SINGLE SEATS BUTTONSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+
+.FS1{
+      position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 54px;
+        left: 614px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.FS2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 78px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 102px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS4 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 126px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS5 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 150px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS6 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 174px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS7 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 198px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS8 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 222px;
+    left: 614px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FS9 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 54px;
+    right: 185px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+/*LEFT SIDE BUTTONS OF FIRST FLOOOOOOOOOOOOORRRRRRRRRRRRRRRR*/
+
+.FR4T1{
+    position: absolute;
+        width: 46px;
+        height: 25px;
+        top: 54px;
+        right: 230px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.FR5T2 {
+    position: absolute;
+    width: 66px;
+    height: 25px;
+    top: 54px;
+    right: 100px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR8T3 {
+    position: absolute;
+    width: 25px;
+    height: 66px;
+    top: 131px;
+    right: 250px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR8T4 {
+    position: absolute;
+    width: 25px;
+    height: 66px;
+    top: 131px;
+    right: 200px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR8T5 {
+    position: absolute;
+    width: 25px;
+    height: 66px;
+    top: 131px;
+    right: 150px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR8T6 {
+    position: absolute;
+    width: 25px;
+    height: 66px;
+    top: 131px;
+    right: 100px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR4T7 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 233px;
+    right: 230px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR4T8 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 233px;
+    right: 178px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.FR4T9 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 233px;
+    right: 123px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.PC2{
+    position: absolute;
+        width: 46px;
+        height: 25px;
+        top: 345px;
+        right: 166px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.PC3 {
+    position: absolute;
+    width: 46px;
+    height: 25px;
+    top: 345px;
+    right: 121px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.GOTO2NDFLOOR{
+position: absolute;
+    bottom: 5px;
+    /* Align the bottom of the button to the bottom of the parent container */
+    left: 710px;
+    width: 180px;
+    height: 30px;
+    border: none;
+    /* or remove this line if you don't want a border */
+    background-color: transparent;
+}
+
+
+
+/*START OF SECOND FLOOR*/
+.second-floor-buttons{
+    position: relative;
+        width: 930px;
+        height: 393px;
+        background-color: #d9d9d9;
+        border-radius: 6px;
+        border: 1px solid;
+        border-color: #000000;
+    }
+
+
+.SecLabel{
+position: absolute;
+    width: 74px;
+    height: 19px;
+    top: 31px;
+    left: 456px;
+    background-color: transparent;
+}
+
+.SecLText{
+      position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Inter-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #1e1e1e;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+/*DISPLAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+.BookSectionL1{
+    position: absolute;
+    width: 22px;
+    height: 171px;
+    top: 70px;
+    left: 136px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+   
+}
+
+
+.L1textStyles {
+         top: 50%;
+        left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+        position: absolute;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #1e1e1e;
+        font-size: 8px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+    }
+
+.BookSectionL2{
+    position: absolute;
+        width: 85px;
+        height: 22px;
+        top: 70px;
+        left: 197px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+
+}
+
+.L2textStyles{
+            top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            position: absolute;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #1e1e1e;
+            font-size: 8px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+}
+
+.ThesisSectionL3{
+    position: absolute;
+        width: 22px;
+        height: 70px;
+        top: 70px;
+        left: 324px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.L3textStyles{
+                 top: 30px;
+                left:-22px;
+                transform: rotate(-90deg);
+                position: absolute;
+                font-family: "Inter-Regular", Helvetica;
+                font-weight: 400;
+                color: #1e1e1e;
+                font-size: 8px;
+                letter-spacing: 0;
+                line-height: normal;
+                white-space: nowrap;
+}
+
+.BookSectionL4{
+    position: absolute;
+        width: 22px;
+        height: 132px;
+        top: 241px;
+        left: 191px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.BookSectionL5{
+    position: absolute;
+        width: 85px;
+        height: 22px;
+        top: 241px;
+        left: 212px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.BookSectionL6{
+    position: absolute;
+        width: 22px;
+        height: 101px;
+        top: 270px;
+        left: 328px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.BookSectionL7{
+        position: absolute;
+            width: 22px;
+            height: 101px;
+            top: 270px;
+            left: 378px;
+            background-color: #ecebeb;
+            border: 1px solid;
+            border-color: #000000;
+}
+
+.BookSectionL8 {
+    position: absolute;
+    width: 22px;
+    height: 101px;
+    top: 270px;
+    left: 428px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+.BookSectionL9 {
+    position: absolute;
+    width: 22px;
+    height: 101px;
+    top: 270px;
+    left: 478px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+.BookSectionL10 {
+    position: absolute;
+    width: 22px;
+    height: 101px;
+    top: 270px;
+    left: 528px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+.BookSectionL11 {
+    position: absolute;
+    width: 22px;
+    height: 101px;
+    top: 270px;
+    left: 578px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+.BookSectionL12 {
+    position: absolute;
+    width: 22px;
+    height: 101px;
+    top: 270px;
+    left: 628px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.BookReturn{
+    position: absolute;
+    width: 131px;
+    height: 73px;
+    top: 300px;
+    left: 695px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.BReturn{
+         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #1e1e1e;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+}
+
+
+/*Stairs*/
+.box {
+    width: 68px;
+    height: 51px;
+}
+
+.box .group {
+    position: absolute;
+    width: 51px;
+    height: 68px;
+    top: 312px;
+    left: 854px;
+    transform: rotate(-90deg);
+}
+
+.box .overlap-group {
+    position: absolute;
+    height: 68px;
+}
+
+.box .common-rectangle {
+    position: absolute;
+    width: 68px;
+    height: 11px;
+    top: 28px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+    transform: rotate(-90deg);
+}
+
+.box .rectangle {
+    left: -28px;
+}
+
+.box .div {
+    left: -8px;
+}
+
+.box .rectangle-2 {
+    left: -18px;
+}
+
+.box .rectangle-3 {
+    left: 12px;
+}
+
+.box .rectangle-4 {
+    left: 2px;
+}
+
+/*End of DISPLAYSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+
+
+/* Left buttons start*/
+
+.STtext{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #1e1e1e;
+        font-size: 8px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.SS1{
+        position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 70px;
+            left: 769px;
+            background-color: #ecebeb;
+            border: 1px solid;
+            border-color: #000000;
+}
+
+.animated-button {
+    cursor: pointer;
+}
+
+/* Define the keyframes for the modified bounce animation */
+@keyframes bounce {
+
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-5px);
+    }
+
+    60% {
+        transform: translateY(-2px);
+    }
+}
+
+/* Add a click event listener to trigger the modified bounce animation */
+.animated-button:active {
+    animation: bounce 0.1s ease-in-out;
+}
+
+
+.SS2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 745px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 705px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS4 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 681px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS5 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 624px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS6 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 600px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS7 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 576px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS8 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 552px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS9 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 528px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS10 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 504px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS11 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 480px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS12 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 456px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS13 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 432px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+.SS14 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 408px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+.SS15 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 384px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS16 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 225px;
+    left: 598px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS17 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 225px;
+    left: 555px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS18 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 225px;
+    left: 433px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.SS19 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 225px;
+    left: 390px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+/*END OF SINGLE SEAT BUTTONS*/
+
+/*TABLE BUTTONS*/
+
+.Ttext{
+             top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            position: absolute;
+            font-family: "Inter-Regular", Helvetica;
+            font-weight: 400;
+            color: #1e1e1e;
+            font-size: 8px;
+            letter-spacing: 0;
+            line-height: normal;
+            white-space: nowrap;
+}
+.ST1{
+    position: absolute;
+        width: 25px;
+        height: 46px;
+        top: 159px;
+        left: 797px;
+        background-color: #ecebeb;
+        border: 1px solid;
+        border-color: #000000;
+}
+
+.ST2 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 737px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST3 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 677px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST4 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 617px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST5 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 557px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST6 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 497px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST7 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 437px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST8 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 377px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST9 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 317px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST10 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 257px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST11 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 159px;
+    left: 197px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.ST11 {
+    position: absolute;
+    width: 25px;
+    height: 46px;
+    top: 298px;
+    left: 258px;
+    background-color: #ecebeb;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.GOTO1STFLOOR{
+    position: absolute;
+        bottom: 5px;
+        /* Align the bottom of the button to the bottom of the parent container */
+        left: 710px;
+        width: 180px;
+        height: 30px;
+        border: none;
+        /* or remove this line if you don't want a border */
+        background-color: transparent;
+}
+
+.GT1FTS{
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: "Inter-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #1e1e1e;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+}
+    /*END OF SECOND FLOOR*/
+
+.lit {
+    background-color: #da4444;
+}

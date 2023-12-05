@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student Library Entry Monitoring Site for Laguna State Polytechnic University (LSPU-SCC)"
+    />
+    <meta
+      name="keywords"
+      content="LSPU-SCC, library, student, entry monitoring, study spaces, technology"
+    />
+    <title>LSPU-SCC Student Library Entry Monitoring Site</title>
+
+    <link rel="stylesheet" href="{% static 'scanentryqrcode.css' %}" />
+    <link rel="icon" type="image/png" href="{% static 'Images/logo.png' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="user-profile-header">
+        <a class="header-button" href="{% url 'entry_manual' %}">&lt; Back to Mannual</a>
+      </header>
+
+      <div class="user-entry-container">
+        <div class="user-entry-content">
+          <!-- Show QR Code -->
+          <div class="qr-code-entry">
+            <div class="show-qr-container">
+                <div id="reader"></div>
+            </div>
+          </div>
+
+          <!-- Manual Entry Login -->
+          <div class="manual-entry">
+            <div class="manual-entry-content">
+              <div class="header-logo-heading">
+                <div class="header-logo-container">
+                  <a href="#">
+                    <img
+                      class="header-logo"
+                      alt="LSPU-SCC Logo"
+                      src="{% static 'Images/logo.png' %}"
+                    />
+                  </a>
+                </div>
+                <h1 class="manual-entry-heading">Login</h1>
+              </div>
+              <form action="{% url 'register_entry' %}" method="POST" manual-entry-form>
+                {% csrf_token %}
+                <!-- Full Name Input -->
+                <input
+                  type="text"
+                  class="manual-entry-attributes"
+                  id="full-name"
+                  name="full-name"
+                  placeholder="Full Name (First Name, M.I, Surname)"
+                  required
+                  disabled
+                  value="{{ student_info.Name }}"
+                />
+
+                <!-- Student ID Input -->
+                <input
+                  type="text"
+                  class="manual-entry-attributes"
+                  id="student-id"
+                  name="student-id"
+                  placeholder="Student ID"
+                  required
+                  disabled
+                  value="{{ student_info.Id }}"
+                />
+
+                <!-- College Department  -->
+                <input 
+                  type="text"
+                  class="manual-entry-attributes"
+                  id="college-department"
+                  name="college-department"
+                  placeholder="College Department"
+                  required
+                  disabled
+                  value="{{ student_info.Department }}"
+                >
+
+                <!-- Course or College Programs  -->
+                <input 
+                  type="text"
+                  class="manual-entry-attributes"
+                  id="course"
+                  name="course"
+                  placeholder="Course or College Program"
+                  required
+                  disabled
+                  value="{{ student_info.Course }}"
+                >
+
+                <!-- School Year Dropdown -->
+                <input
+                 type="text"
+                 class="manual-entry-attributes"
+                 id="year"
+                 name="year"
+                 placeholder="College Year"
+                 required
+                 disabled
+                 value="{{ student_info.Year }}"
+                >
+
+                <select
+                  class="manual-entry-attributes"
+                  id="purpose"
+                  name="purpose"
+                  required
+                >
+                  <option value="" selected>Select Visit Purpose</option>
+                  <option value="thesis">Thesis Section</option>
+                  <option value="book">Book Section</option>
+                  <option value="periodicals">Periodicals Section</option>
+                  <option value="reading">Reading Area</option>
+                  <option value="internet">Internet and Computer Area</option>
+                </select>
+                <input
+                  type="submit"
+                  value="Confirm"
+                  class="manual-entry-confirm"
+                  id="confirm-button"
+                />
+
+                <input type="hidden" name="student-name" value="{{ student_info.Name }}">
+                <input type="hidden" name="student-id" value="{{ student_info.Id }}">
+                <input type="hidden" name="student-course" value="{{ student_info.Course }}">
+                <input type="hidden" name="student-department" value="{{ student_info.Department }}">
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="popup" id="student-confirmation">
+      <div class="overlay"></div>
+      <div class="content">
+          <h1>STUDENT CONFIRMATION</h1>
+          <form action="{% url 'student_search' %}" method="POST">
+              {% csrf_token %}
+              <p>is this your id?</p>
+
+              <input type="text" name="result-input" id="result-input" class="input-container">
+              <button id="update-button" class="confirm-button" type="submit">Confirm</button>
+          </form>
+      </div>
+  </div>
+
+  <script src="{% static 'Scripts/scanentryqrcode.js' %}"></script>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>
